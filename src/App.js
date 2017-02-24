@@ -3,12 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 import PostList from './PostList';
 
-import ApolloClient, { createNetworkInterface } from 'apollo-client';
-// import ApolloClient from 'apollo-client';
+// import ApolloClient, { createNetworkInterface } from 'apollo-client';
+import ApolloClient from 'apollo-client';
 import { ApolloProvider } from 'react-apollo';
 // const client = new ApolloClient();
 const client = new ApolloClient({
-  networkInterface: createNetworkInterface({ uri: 'http://localhost:8080/graphql' }),
+  // networkInterface: createNetworkInterface({ uri: ':8080' }),
   // connectToDevTools: true
   // dataIdFromObject: r => r.id,
 });
